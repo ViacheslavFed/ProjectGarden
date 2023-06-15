@@ -1,0 +1,30 @@
+
+
+.product_item_img{
+    width: 319px;
+    height: 276px;
+}
+
+.product_item_price{
+    margin: 20px 0 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.disc_pr{
+    font-size: 30px;
+}
+
+.price{
+    font-size: 20px;
+}
+
+.discont{
+    font-size: 20px;
+    color: #FF32A1;
+}
+.title{
+    margin-left: 30px;
+    font-size: 16px;
+}

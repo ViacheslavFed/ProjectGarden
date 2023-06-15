@@ -1,0 +1,17 @@
+
+.categories{
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+
+.img_list{
+    margin: 20px 0;
+    width: 318px;
+    height: 350px;
+}
+
+.h4_title{
+    font-size: 18px;
+}

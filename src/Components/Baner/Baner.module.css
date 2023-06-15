@@ -1,0 +1,40 @@
+
+
+.baner_menu{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    display: flex;
+    background: #A1E2EB;
+}
+
+.baner_left,
+.baner_right{
+    flex: 1;
+}
+
+.baner_left{
+    margin-left: 50px;
+}
+
+.h2_sale{
+    margin-top: 130px;
+    width: 700;
+    font-size: 80px;
+    color: #FFFFFF;
+}
+
+.h3_season{
+    width: 700;
+    font-size: 63px;
+    color: #FFFFFF;
+}
+
+.button_sale{
+    margin-top: 60px;
+    padding: 25px 50px;
+    background: #FFFFFF;
+    border-radius: 13px;
+    border: none;
+    font-size: 25px;
+    color: #2D2D2D;
+}

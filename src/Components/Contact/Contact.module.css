@@ -1,0 +1,57 @@
+
+.contact_address{
+    margin: 0 0 70px 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.contact_address h3{
+    font-size: 40px;
+}
+
+.contact p{
+    margin: 25px 0 30px;
+    font-size: 64px;
+}
+
+.contact_icons{
+    display: flex;
+    gap: 30px;
+}
+
+.icon_instagram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+
+.icon_whatsapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+
+.contact,
+.address{
+    flex: 1;
+}
+
+.address_p1{
+    margin: 25px 0;
+    font-size: 44px;
+}
+
+.address_p2{
+    font-size: 18px;
+}
+
+.address_p3{
+    font-size: 24px;
+}
+
+.icon{
+    font-size: 46px;
+}

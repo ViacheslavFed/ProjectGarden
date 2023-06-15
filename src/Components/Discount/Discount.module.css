@@ -1,0 +1,60 @@
+
+.discount{
+    margin-top: 90px;
+    display: flex;
+    background: linear-gradient(262.69deg, #339933 -0.43%, #006300 104.36%);
+}
+
+.discount_img,
+.discount_form{
+    flex: 1;
+}
+
+.discount_img{
+    display: flex;
+    justify-content: center;
+}
+
+.discount_form{
+    width: 470px;
+    display: flex;
+    justify-content: flex-start;
+    color: #FFFFFF;
+}
+
+.discount_form h2{
+    margin-top: 45px;
+    font-size: 90px;
+}
+
+.discount_form h4{
+    margin-bottom: 45px;
+    font-size: 50px;
+}
+
+.discount_form input,
+.discount_form button{
+    width: 470px;
+    height: 75px;
+    border-radius: 25px;
+    outline: none;
+}
+
+.discount_form button{
+    margin-bottom: 45px;
+    font-size: 28px;
+    color: #FFFFFF;
+    background: linear-gradient(262.69deg, #339933 -0.43%, #006300 104.36%);
+    border: 2px solid #FFFFFF;
+}
+
+.discount_form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.discount_form input{
+    margin-bottom: 30px;
+    padding-left: 50px;
+    font-size: 18px;
+}
