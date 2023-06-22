@@ -1,12 +1,18 @@
 import React from 'react'
+import Filter from '../Filter/Filter'
 import ProductItem from '../ProductItem/ProductItem'
 import s from './ProductList.module.css'
 
-function ProductList({products}) {
+function ProductList({products, location, showFilter}) {
+    products = products.filter((product) => product.showBySale && product.showByRange)
   return (
-    <div className={s.product_list}>
-        {products.map(elem=><ProductItem product={elem} key={elem.id}/>)}
+    <div>
+        {showFilter && <Filter location={location}/>}
+        <div className={s.product_list}>
+            {products.map(elem=><ProductItem product={elem} key={elem.id}/>)}
+        </div>
     </div>
+
   )
 }
 

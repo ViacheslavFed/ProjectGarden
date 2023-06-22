@@ -6,12 +6,13 @@ import s from './AllProductsPage.module.css'
 
 function AllProductsPage() {
     const dispatch = useDispatch()
+    const location = 'products_page'
     useEffect(()=>dispatch(fetchProductsList()),[])
     const products = useSelector(store=>store.products)
   return (
     <div>
-         <h2>All products</h2>
-        <ProductList products={products}/>
+         <h2 className={s.all_product_h2}>All products</h2>
+        <ProductList products={products} showFilter={true} location={location}/>
     </div>
   )
 }

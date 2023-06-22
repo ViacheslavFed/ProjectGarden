@@ -6,16 +6,19 @@ import { fetchCategorieProducts } from '../../Request/Request'
 import s from './CategorieProductsPage.module.css'
 
 function CategorieProductsPage() {
+    const location = 'category_products'
     const{id}=useParams()
     const dispatch = useDispatch()
     useEffect(()=>dispatch(fetchCategorieProducts(id)),[])
     const categorieProducts = useSelector(store=>store.categorieProducts)
     const title = categorieProducts.data ? categorieProducts.category.title : ''
     const data = categorieProducts.data ? categorieProducts.data : []
-  return (
+  
+    const showFilter = true
+    return (
     <div>
-        <h2>{title}</h2>
-        <ProductList products={data}/>
+        <h2 className={s.title}>{title}</h2>
+        <ProductList products={data} showFilter={showFilter} location={location}/>
     </div>
   )
 }

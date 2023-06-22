@@ -9,10 +9,12 @@ function AllSalesPage() {
     useEffect(()=>dispatch(fetchProductsList()),[])
     const products = useSelector(store=>store.products)
     const discountProducts = products.filter(elem=>elem.discont_price!==null)
-  return (
+    const showFilter = true
+    const location = 'sale'
+    return (
     <div>
-        <h2>Products with sale</h2>
-        <ProductList products={discountProducts}/>
+        <h2 className={s.all_salle_h2}>Products with sale</h2>
+        <ProductList products={discountProducts} showFilter={showFilter} location={location}/>
     </div>
   )
 }

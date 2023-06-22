@@ -1,8 +1,30 @@
 
+.product_item{
+    position: relative;
+    overflow: hidden;
+}
 
 .product_item_img{
     width: 319px;
     height: 276px;
+}
+
+.add_to_cart{
+    position: absolute;
+    transition: all 0.5s;
+    left: 20px;
+    bottom: -100%;
+    width: 280px;
+    height: 70px;
+    background: #F1FFF1;
+    border: 2px solid #339933;
+    border-radius: 21px;
+    font-size: 18px;
+    color: #339933;
+}
+
+.product_item:hover .add_to_cart{
+    bottom: 30%;
 }
 
 .product_item_price{
@@ -28,3 +50,4 @@
     margin-left: 30px;
     font-size: 16px;
 }
+

@@ -1,0 +1,53 @@
+
+
+.all_product_input{
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.input_pris{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.input_pris input{
+    padding-left: 10px;
+    width: 103px;
+    height: 42px;
+    font-size: 16px;
+    color: #ACACAC;
+    border: 1px solid #000000;
+    border-radius: 7px;
+}
+
+.input_discount{
+    margin: 0 90px 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.input_discount input{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 7px;
+}
+
+.input_sorted{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.input_sorted select{
+    padding-left: 10px;
+    width: 219px;
+    height: 40px;
+    font-size: 16px;
+    color: #797979;
+}

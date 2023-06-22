@@ -10,10 +10,13 @@ function Sale() {
     useEffect(()=>dispatch(fetchProductsList()),[])
     const products = useSelector(store=>store.products)
     const discountProducts = products.filter(elem=>elem.discont_price!==null).slice(0,4)
+
+    const location = 'homePage'
+    const showFilter = false
   return (
     <div className={s.sale_sale}>
         <h2>Sale</h2>
-        <ProductList products={discountProducts}/>
+        <ProductList products={discountProducts} location={location} showFilter={showFilter}/>
     </div>
   )
 }

@@ -8,6 +8,9 @@ import AllSalesPage from './Pages/AllSalesPage/AllSalesPage';
 import Footer from './Components/Footer/Footer';
 import AllCategoriePage from './Pages/AllCategoriePage/AllCategoriePage';
 import CategorieProductsPage from './Pages/CategorieProductsPage/CategorieProductsPage';
+import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
+import ProductInfoPage from './Pages/ProductInfoPage/ProductInfoPage';
+import CartPage from './Pages/CartPage/CartPage';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
           <Route path='/sales/all' element={<AllSalesPage/>}/>
           <Route path='/catalog' element={<AllCategoriePage/>}/>
           <Route path='/categories/:id' element={<CategorieProductsPage/>}/>
+          <Route path='/products/:id' element={<ProductInfoPage/>}/>
+          <Route path='/cart' element={<CartPage/>}/>
+          <Route path='/*' element={<NotFoundPage/>}/>
         </Routes>
         <Footer/>
     </div>

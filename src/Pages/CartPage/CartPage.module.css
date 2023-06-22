@@ -1,0 +1,18 @@
+
+.cart_page h2{
+    margin: 80px 0 16px 0;
+    font-size: 40px;
+}
+
+.cart_link{
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+}
+
+.cart_page_flex{
+    margin-bottom: 190px;
+    display: flex;
+    gap: 60px;
+}

@@ -30,3 +30,12 @@ a{
     border-radius: 5px;
     border: none;
 }
+
+.icon_cart{
+    font-size: 25px;
+}
+
+.cart{
+    position: relative;
+}
+
