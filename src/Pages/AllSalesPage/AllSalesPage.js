@@ -12,7 +12,7 @@ function AllSalesPage() {
     const showFilter = true
     const location = 'sale'
     return (
-    <div>
+    <div className="container">
         <h2 className={s.all_salle_h2}>Products with sale</h2>
         <ProductList products={discountProducts} showFilter={showFilter} location={location}/>
     </div>

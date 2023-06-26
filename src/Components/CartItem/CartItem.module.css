@@ -83,3 +83,31 @@
     top: 0;
     right: 0;
 }
+
+/* ================================== */
+
+@media (max-width: 750px){
+    .cart_item{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cart_item img{
+        margin-bottom: 10px;
+    }
+
+    .title_button_flex_title{
+        margin-bottom: -50px;
+    }
+
+    .border{
+        margin-bottom: -90px;
+        
+    }
+
+    .title_button_flex{
+        display: flex;
+        align-items: center;
+    }
+}

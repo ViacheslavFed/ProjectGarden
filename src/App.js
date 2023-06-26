@@ -11,11 +11,20 @@ import CategorieProductsPage from './Pages/CategorieProductsPage/CategorieProduc
 import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 import ProductInfoPage from './Pages/ProductInfoPage/ProductInfoPage';
 import CartPage from './Pages/CartPage/CartPage';
+import { useState } from 'react';
+import Modale from './Components/Modale/Modale';
 
 function App() {
+  const [active, setActive]=useState(false)
+  if(active){
+    document.body.style.overflow = "hidden"
+  }else {
+    document.body.style.overflow = ""
+  }
   return (
-    <div className="container">
-        <Header/>
+    <div className='container'>
+        <Modale active={active} setActive={setActive}/>
+        <Header active={active} setActive={setActive}/>
         <Routes>
           <Route path='/' element={<HomePage/>}/>
           <Route path='/products/all' element={<AllProductsPage/>}/>

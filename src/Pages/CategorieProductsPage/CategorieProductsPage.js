@@ -16,7 +16,7 @@ function CategorieProductsPage() {
   
     const showFilter = true
     return (
-    <div>
+    <div className="container">
         <h2 className={s.title}>{title}</h2>
         <ProductList products={data} showFilter={showFilter} location={location}/>
     </div>

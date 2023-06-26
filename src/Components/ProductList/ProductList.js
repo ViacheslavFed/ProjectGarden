@@ -6,7 +6,7 @@ import s from './ProductList.module.css'
 function ProductList({products, location, showFilter}) {
     products = products.filter((product) => product.showBySale && product.showByRange)
   return (
-    <div>
+    <div className='container'>
         {showFilter && <Filter location={location}/>}
         <div className={s.product_list}>
             {products.map(elem=><ProductItem product={elem} key={elem.id}/>)}

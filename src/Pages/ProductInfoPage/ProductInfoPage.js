@@ -21,8 +21,8 @@ const dispatch = useDispatch()
 const addToCart = ()=>{
     dispatch(add_to_cart_action(product))
 }
-console.log(product)
   return (
+    <div className="container">
     <div className={s.product_info_page}>
         <h2>{product.title}</h2>
         <div className={s.product_info_page_flex}>
@@ -41,6 +41,8 @@ console.log(product)
             </div>
         </div>
     </div>
+    </div>
+
   )
 }
 

@@ -49,7 +49,7 @@ function Filter({location}) {
         dispatch(location==='category_products' ? filter_by_sale_action(e.target.checked):filter_products_by_sale_action(e.target.checked))
     }
   return (
-    <div>
+    <div className="container">
         <div className={s.all_product_input}>
             <div className={s.input_pris}>
                 <p>Price</p>
@@ -60,6 +60,29 @@ function Filter({location}) {
                 <p>Discounted items</p>
                 <input onClick={discount_hendler} type='checkbox'></input>
             </div>}
+            <div className={s.input_sorted}>
+                <p>Sorted</p>
+                <select onChange={handel_sort} type='number'>
+                    <option value='default'>by default</option>
+                    <option value='priceDesc'>price descending</option>
+                    <option value='priceAsc'>price ascending</option>
+                    <option value='namea-z'>by name A-Z</option>
+                    <option value='namez-a'>by name Z-A</option>
+                </select>
+            </div>
+         </div>
+         <div className={s.all_product_input_media}>
+            <div className={s.all_product_input_media_flex}>
+            <div className={s.input_pris}>
+                <p>Price</p>
+                <input type='number' placeholder='from' name='from' min='0' value={fromValue} onChange={handleChange}></input>
+                <input type='number' placeholder='to' name='to' min='0' value={toValue} onChange={handleChange}></input>
+            </div>
+            {location !== 'sale' && <div className={s. input_discount}>
+                <p>Discounted items</p>
+                <input onClick={discount_hendler} type='checkbox'></input>
+            </div>}
+            </div>
             <div className={s.input_sorted}>
                 <p>Sorted</p>
                 <select onChange={handel_sort} type='number'>

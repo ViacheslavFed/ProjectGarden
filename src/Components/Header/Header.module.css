@@ -39,3 +39,62 @@ a{
     position: relative;
 }
 
+.line_first,
+.line_second,
+.line_tree{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+.burger{
+    display: none;
+    flex-direction: column;
+    gap: 7px;
+
+}
+
+.burger_active .line_first{
+    rotate: 45deg;
+    translate: 0 10px;
+}
+
+.burger_active .line_second{
+    rotate: 45deg;
+    translate: -1px 7px;
+}
+
+.burger_active .line_tree{
+    rotate: -45deg;
+    translate: -1px 5px;
+}
+
+.burger_active{
+    z-index: 2;
+}
+
+/* ====================================== */
+
+@media (max-width: 900px) {
+
+    .burger{
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .header_menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+    }
+
+    .nav_menu{
+        display: none;
+    }
+
+    .icon_cart{
+        z-index: -1;
+    }
+}

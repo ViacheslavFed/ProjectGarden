@@ -16,7 +16,7 @@ function HomePage() {
     },[])
     const categories = useSelector(store=>store.categories).slice(0,4)
   return (
-    <div>
+    <div className="container">
         <Baner/>
         <div className={s.catalog}>
             <h2>Catalog</h2>

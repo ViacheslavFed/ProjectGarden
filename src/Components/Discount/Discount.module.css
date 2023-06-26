@@ -58,3 +58,13 @@
     padding-left: 50px;
     font-size: 18px;
 }
+
+/* =============================== */
+
+@media (max-width: 900px){
+    .discount{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

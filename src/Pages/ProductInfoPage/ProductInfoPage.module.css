@@ -49,3 +49,28 @@
 .description{
     width: 412px;
 }
+
+/* ==================================== */
+
+@media (max-width: 900px){
+    .product_info_page_flex{
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product_info_page_flex_right{
+        margin-top: -150px;
+        text-align: center;
+    }
+
+    .product_info_page_flex_left img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .description{
+        width: 100%;
+    }
+}

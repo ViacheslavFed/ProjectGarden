@@ -16,3 +16,13 @@
     display: flex;
     gap: 60px;
 }
+
+/* ================================= */
+
+@media (max-width: 900px){
+    .cart_page_flex{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+}

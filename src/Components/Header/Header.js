@@ -5,7 +5,7 @@ import { SlHandbag } from 'react-icons/sl'
 import { NavLink } from 'react-router-dom'
 import CartCounter from '../CartCounter/CartCounter'
 
-function Header() {
+function Header({active,setActive}) {
   return (
     <div className={s.header_menu}>
         <div className={s.logo}>
@@ -22,6 +22,11 @@ function Header() {
                 <SlHandbag className={s.icon_cart}/>
             </NavLink>
             <CartCounter className={s.cart_counter}/>
+        </div>
+        <div className={active ? s.burger_active : s.burger} onClick={()=>setActive(!active)}>
+                <div className={s.line_first}></div>
+                <div className={s.line_second}></div>
+                <div className={s.line_tree}></div>
         </div>
     </div>
   )

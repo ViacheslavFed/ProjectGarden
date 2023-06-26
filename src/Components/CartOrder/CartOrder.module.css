@@ -49,3 +49,21 @@
     background: #339933;
     border-radius: 17px;
 }
+
+/* ================================= */
+
+@media (max-width: 900px){
+    .cart_order_border{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .cart_order_input_button input{
+        width: 100%;
+    }
+
+    .cart_order_input_button button{
+        width: 100%;
+    }
+}

@@ -1,12 +1,16 @@
 
 .product_item{
-    position: relative;
     overflow: hidden;
 }
 
 .product_item_img{
     width: 319px;
     height: 276px;
+}
+
+.product_img_add_cart{
+    position: relative;
+    width: 319px;
 }
 
 .add_to_cart{
@@ -24,7 +28,13 @@
 }
 
 .product_item:hover .add_to_cart{
-    bottom: 30%;
+    bottom: 80px;
+}
+
+.add_to_cart:hover{
+    color: #ffff;
+    border: 2px solid #339933;
+    background-color:  #339933;
 }
 
 .product_item_price{

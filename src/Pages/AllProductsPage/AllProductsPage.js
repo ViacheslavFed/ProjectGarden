@@ -10,7 +10,7 @@ function AllProductsPage() {
     useEffect(()=>dispatch(fetchProductsList()),[])
     const products = useSelector(store=>store.products)
   return (
-    <div>
+    <div className="container">
          <h2 className={s.all_product_h2}>All products</h2>
         <ProductList products={products} showFilter={true} location={location}/>
     </div>

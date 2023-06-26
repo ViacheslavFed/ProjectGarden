@@ -11,7 +11,7 @@ function AllCategoriePage() {
     },[])
     const categories = useSelector(store=>store.categories)
   return (
-    <div>
+    <div className={s.all_category}>
         <CategoriesList categories={categories}/>
     </div>
   )

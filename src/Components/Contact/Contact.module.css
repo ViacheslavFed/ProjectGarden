@@ -55,3 +55,24 @@
 .icon{
     font-size: 46px;
 }
+
+/* =============================== */
+
+@media (max-width: 900px){
+    .contact_address{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact_icons{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 650px){
+    .contact p{
+        font-size: 44px;
+    }
+}

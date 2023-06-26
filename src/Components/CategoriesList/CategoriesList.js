@@ -5,6 +5,7 @@ import s from './CategoriesList.module.css'
 
 function CategoriesList({categories}) {
   return (
+    <div className='container'>
     <div className={s.categories}>
         {categories.map(elem=>
         <NavLink to={`/categories/${elem.id}`}key={elem.id}>
@@ -16,6 +17,8 @@ function CategoriesList({categories}) {
 
             )}
     </div>
+    </div>
+
   )
 }
 

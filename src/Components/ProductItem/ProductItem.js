@@ -14,16 +14,18 @@ function ProductItem({product}) {
     }
   return (
     <div className={s.product_item}>
-        <NavLink to={`/products/${id}`}>
-            <img className={s.product_item_img} src={`${base_url}${image}`}/>
-        </NavLink>
-        <button className={s.add_to_cart} onClick={addToCart}>Add to cart</button>
-        <div className={s.product_item_price}>
-        <p className={s.disc_pr}>{discont_price !==null ? discont_price : price} $</p>
-            {discont_price && <p className={s.price}>{price}$</p>}
-            {discont_price && <p className={s.discont}>{-discont}%</p>}
+        <div className={s.product_img_add_cart}>
+            <NavLink to={`/products/${id}`}>
+                <img className={s.product_item_img} src={`${base_url}${image}`}/>
+            </NavLink>
+            <button className={s.add_to_cart} onClick={addToCart}>Add to cart</button>
         </div>
-        <p className={s.title}>{title}</p>
+        <div className={s.product_item_price}>
+            <p className={s.disc_pr}>{discont_price !==null ? discont_price : price} $</p>
+                {discont_price && <p className={s.price}>{price}$</p>}
+                {discont_price && <p className={s.discont}>{-discont}%</p>}
+        </div>
+            <p className={s.title}>{title}</p>
     </div>
   )
 }
