@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ProjectGarden/static/css/main.19e0fcee.css",
-    "main.js": "/ProjectGarden/static/js/main.80d12f7c.js",
+    "main.css": "/ProjectGarden/static/css/main.5a93ac9b.css",
+    "main.js": "/ProjectGarden/static/js/main.4860a907.js",
     "static/media/grass.png": "/ProjectGarden/static/media/grass.9e79718ad85e95b398b4.png",
     "static/media/404.jpg": "/ProjectGarden/static/media/404.ccb0d2dfd9e6d052089c.jpg",
     "static/media/gnome.png": "/ProjectGarden/static/media/gnome.d7aeb6a7be57f95972d3.png",
     "index.html": "/ProjectGarden/index.html",
-    "main.19e0fcee.css.map": "/ProjectGarden/static/css/main.19e0fcee.css.map",
-    "main.80d12f7c.js.map": "/ProjectGarden/static/js/main.80d12f7c.js.map"
+    "main.5a93ac9b.css.map": "/ProjectGarden/static/css/main.5a93ac9b.css.map",
+    "main.4860a907.js.map": "/ProjectGarden/static/js/main.4860a907.js.map"
   },
   "entrypoints": [
-    "static/css/main.19e0fcee.css",
-    "static/js/main.80d12f7c.js"
+    "static/css/main.5a93ac9b.css",
+    "static/js/main.4860a907.js"
   ]
 }
